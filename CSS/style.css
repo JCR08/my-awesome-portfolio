@@ -1,0 +1,113 @@
+/***** MIXINS *****/
+/***** COLORS *****/
+/***** STYLING *****/
+body {
+  font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; }
+
+@media (max-width: 992px) {
+  .modal {
+    width: 95%; } }
+.modal .modal-body img {
+  padding-top: 10px; }
+.modal .modal-body hr {
+  border-color: #3560BB; }
+
+header div.navbar-default {
+  background-color: #7D9BDC;
+  border: 0px;
+  padding: 1em 0; }
+  header div.navbar-default .navbar-toggle {
+    border-color: red; }
+    header div.navbar-default .navbar-toggle .icon-bar {
+      background-color: white; }
+  header div.navbar-default .navbar-brand {
+    color: #0D3385;
+    font-size: 36px;
+    margin: 0; }
+  header div.navbar-default .navbar-brand:hover {
+    color: #0D3385; }
+  header div.navbar-default .navbar-nav li {
+    font-size: 1.25em; }
+    header div.navbar-default .navbar-nav li a {
+      transition: 0.3s;
+      color: #3560BB; }
+    header div.navbar-default .navbar-nav li a:hover {
+      background-color: #FFD584;
+      color: #C68300; }
+
+section#about {
+  background-color: white;
+  color: #0D3385;
+  padding: 100px 0 50px 0; }
+  section#about h2 {
+    margin-bottom: 1em; }
+  @media (min-width: 992px) {
+    section#about div.row {
+      align-items: center;
+      display: flex; } }
+  section#about img {
+    margin-bottom: 2em;
+    width: 50%; }
+  section#about p {
+    font-size: 1.25em; }
+  section#about ul {
+    font-size: 1.15em; }
+
+section#portfolio {
+  background-color: #3560BB;
+  color: white;
+  padding: 50px 0; }
+  section#portfolio div.projects {
+    margin: 5px; }
+    section#portfolio div.projects a {
+      transition: 0.3s;
+      color: white;
+      margin: 5px; }
+      section#portfolio div.projects a div.project img {
+        width: 100%;
+        padding-bottom: 25px; }
+      @media (min-width: 992px) {
+        section#portfolio div.projects a div.project {
+          height: 300px; }
+        section#portfolio div.projects a:hover {
+          color: #0D3385;
+          cursor: pointer;
+          background-color: #7D9BDC; } }
+
+section#contact {
+  background-color: white;
+  color: #0D3385;
+  font-size: 1.25em;
+  height: 300px;
+  padding: 50px 0; }
+  section#contact h2 {
+    margin-bottom: 1em; }
+  section#contact p.type {
+    margin-bottom: 0; }
+  section#contact a {
+    color: #0D3385; }
+  @media (min-width: 992px) {
+    section#contact p.type {
+      text-align: right;
+      margin-bottom: 1em; }
+    section#contact p.info {
+      text-align: left;
+      margin-bottom: 1em; }
+      section#contact p.info a {
+        transition: 0.3s;
+        color: #0D3385; } }
+
+footer {
+  background-color: #3560BB;
+  color: #7D9BDC;
+  padding: 1em 0; }
+  footer a {
+    transition: 0.3s;
+    color: #7D9BDC;
+    margin: 0 1em; }
+    footer a:hover {
+      color: #FFBA33; }
+
+/*# sourceMappingURL=style.css.map */

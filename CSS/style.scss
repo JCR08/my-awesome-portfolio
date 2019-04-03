@@ -1,0 +1,206 @@
+/***** MIXINS *****/
+@mixin transition {
+  transition: 0.3s;
+}
+
+/***** COLORS *****/
+$primary-color: #3560BB;
+$primary-dark: #0D3385;
+$primary-light: #7D9BDC;
+$secondary-color: #FFBA33;
+$secondary-dark: #C68300;
+$seconday-light: #FFD584;
+
+/***** STYLING *****/
+body{
+  font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+}
+
+//MODAL
+.modal {
+  @media (max-width: 992px) {
+    width: 95%;
+  }
+
+  .modal-body {
+    img {
+      padding-top: 10px;
+    }
+
+    hr {
+      border-color: $primary-color;
+    }
+  }
+}
+
+//HEADER
+header {
+
+  div.navbar-default {
+    background-color: $primary-light;
+    border: 0px;
+    padding: 1em 0;
+
+    .navbar-toggle {
+      border-color: red;
+
+      .icon-bar {
+        background-color: white;
+      }
+    }
+
+    .navbar-brand {
+      color: $primary-dark;
+      font-size: 36px;
+      margin: 0;
+    }
+
+    .navbar-brand:hover {
+      color: $primary-dark;
+    }
+
+    .navbar-nav {
+
+      li {
+        font-size: 1.25em;
+
+        a {
+          @include transition;
+          color: $primary-color;
+        }
+
+        a:hover {
+          background-color: $seconday-light;
+          color: $secondary-dark;
+        }
+      }
+    }
+  }
+}
+
+// ABOUT
+section#about {
+  background-color: white;
+  color: $primary-dark;
+  padding: 100px 0 50px 0;
+
+  h2 {
+    margin-bottom: 1em;
+  }
+
+  @media (min-width: 992px){
+    div.row{
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  img {
+    margin-bottom: 2em;
+    width: 50%;
+  }
+
+  p {
+    font-size: 1.25em;
+  }
+
+  ul{
+    font-size: 1.15em;
+  }
+}
+
+//PORTFOLIO
+section#portfolio {
+  background-color: $primary-color;
+  color: white;
+  padding: 50px 0;
+
+  div.projects{
+    margin: 5px;
+
+    a {
+      @include transition;
+      color: white;
+      margin: 5px;
+
+      div.project {
+
+        img {
+          width: 100%;
+          padding-bottom: 25px;
+        }
+      }
+
+      @media (min-width: 992px){
+        div.project {
+          height: 300px;
+        }
+
+        &:hover {
+          color: $primary-dark;
+          cursor: pointer;
+          background-color: $primary-light;
+        }
+      }
+    }
+  }
+}
+
+// CONTACT
+section#contact {
+  background-color: white;
+  color: $primary-dark;
+  font-size: 1.25em;
+  height: 300px;
+  padding: 50px 0;
+
+  h2 {
+    margin-bottom: 1em;
+  }
+
+  p.type {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: $primary-dark;
+  }
+
+  @media (min-width: 992px){
+    p.type {
+      text-align: right;
+      margin-bottom: 1em;
+    }
+
+    p.info {
+      text-align: left;
+      margin-bottom: 1em;
+
+      a {
+        @include transition;
+        color: $primary-dark;
+      }
+    }
+  }
+}
+
+// FOOTER
+footer {
+  background-color: $primary-color;
+  color: $primary-light;
+  padding: 1em 0;
+
+  a {
+    @include transition;
+    color: $primary-light;
+    margin: 0 1em;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
