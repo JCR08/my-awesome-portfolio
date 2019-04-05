@@ -31,10 +31,8 @@ header div.navbar-default {
   background-color: #7D9BDC;
   border: 0px;
   padding: 1em 0; }
-  header div.navbar-default .navbar-toggle {
-    border-color: red; }
-    header div.navbar-default .navbar-toggle .icon-bar {
-      background-color: white; }
+  header div.navbar-default .navbar-toggle .icon-bar {
+    background-color: white; }
   header div.navbar-default .navbar-brand {
     color: #0D3385;
     font-size: 3em;
