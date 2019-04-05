@@ -1,10 +1,23 @@
 /***** MIXINS *****/
+/***** FONTS *****/
 /***** COLORS *****/
 /***** STYLING *****/
 body {
   font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; }
+    font-family: 'Josefin Sans', Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; }
+  body h1 {
+    font-size: 3em; }
+  body h2 {
+    font-size: 2.4em; }
+  body h3 {
+    font-size: 1.8em; }
+  body h4 {
+    font-size: 1.5em; }
+  body h5 {
+    font-size: 1.2em; }
+  body h6 {
+    font-size: 0.9em; }
 
 @media (max-width: 992px) {
   .modal {
@@ -24,7 +37,7 @@ header div.navbar-default {
       background-color: white; }
   header div.navbar-default .navbar-brand {
     color: #0D3385;
-    font-size: 36px;
+    font-size: 3em;
     margin: 0; }
   header div.navbar-default .navbar-brand:hover {
     color: #0D3385; }

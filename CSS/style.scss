@@ -3,6 +3,9 @@
   transition: 0.3s;
 }
 
+/***** FONTS *****/
+$header-size: 3em;
+
 /***** COLORS *****/
 $primary-color: #3560BB;
 $primary-dark: #0D3385;
@@ -16,7 +19,31 @@ body{
   font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Josefin Sans', Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+
+  h1 {
+    font-size: $header-size;
+  }
+
+  h2 {
+    font-size: ($header-size * 0.8);
+  }
+
+  h3 {
+    font-size: ($header-size * 0.6);
+  }
+
+  h4 {
+    font-size: ($header-size * 0.5);
+  }
+
+  h5 {
+    font-size: ($header-size * 0.4);
+  }
+
+  h6 {
+    font-size: ($header-size * 0.3);
   }
 }
 
@@ -55,7 +82,7 @@ header {
 
     .navbar-brand {
       color: $primary-dark;
-      font-size: 36px;
+      font-size: $header-size;
       margin: 0;
     }
 
