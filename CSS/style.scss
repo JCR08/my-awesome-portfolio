@@ -64,6 +64,11 @@ body{
   }
 }
 
+hr {
+  border-color: $primary-color;
+  width: 90%;
+}
+
 //HEADER
 header {
 
@@ -141,16 +146,21 @@ section#about {
 
 //PORTFOLIO
 section#portfolio {
-  background-color: $primary-color;
-  color: white;
+  background-color: white;
+  color: $primary-dark;
   padding: 50px 0;
+
+  hr {
+    border-color: $primary-light;
+    width: 50%;
+  }
 
   div.projects{
     margin: 5px;
 
     a {
       @include transition;
-      color: white;
+      color: $primary-dark;
       margin: 5px;
 
       div.project {
@@ -167,7 +177,7 @@ section#portfolio {
         }
 
         &:hover {
-          color: $primary-dark;
+          color: white;
           cursor: pointer;
           background-color: $primary-light;
         }

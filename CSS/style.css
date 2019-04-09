@@ -27,6 +27,10 @@ body {
 .modal .modal-body hr {
   border-color: #3560BB; }
 
+hr {
+  border-color: #3560BB;
+  width: 90%; }
+
 header div.navbar-default {
   background-color: #7D9BDC;
   border: 0px;
@@ -67,14 +71,17 @@ section#about {
     font-size: 1.15em; }
 
 section#portfolio {
-  background-color: #3560BB;
-  color: white;
+  background-color: white;
+  color: #0D3385;
   padding: 50px 0; }
+  section#portfolio hr {
+    border-color: #7D9BDC;
+    width: 50%; }
   section#portfolio div.projects {
     margin: 5px; }
     section#portfolio div.projects a {
       transition: 0.3s;
-      color: white;
+      color: #0D3385;
       margin: 5px; }
       section#portfolio div.projects a div.project img {
         width: 100%;
@@ -83,7 +90,7 @@ section#portfolio {
         section#portfolio div.projects a div.project {
           height: 300px; }
         section#portfolio div.projects a:hover {
-          color: #0D3385;
+          color: white;
           cursor: pointer;
           background-color: #7D9BDC; } }
 
